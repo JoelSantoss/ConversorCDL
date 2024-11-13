@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moeda (USD/BRL)</h1>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" placeholder="Digite o valor" step="0.01">
+
+        <select id="moeda">
+            <option value="BRL">Real para Dólar</option>
+            <option value="USD">Dólar para Real</option>
+        </select>
+
+        <button onclick="converter()">Converter</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
